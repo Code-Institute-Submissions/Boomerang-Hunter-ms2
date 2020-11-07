@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    physics: {
+        default: 'arcade',
+    },
+    scene: {
+        preload: preload,
+        create: create,
+        update: update
+    }
+};
+
+var player;
+var platforms;
+var cursors;
+var graphics;
+var text;
+var cameraMove = false;
+
+var game = new Phaser.Game(config);
+
+function preload () {
+    this.load.image('bg', 'assets/uluru.jpg');
+    this.load.image('ground', 'assets/platform.png');
+    this.load.image('boomerang', 'assets/boomerang.png');
+
+}
+function create () {
+    
+
+    platforms = this.physics.add.staticGroup();
+    
+    platforms.create(400, 568, 'ground').setScale(2).refreshBody();
+}
+function update () {
+
+}
+    /*
+    this.cameras.main.startFollow(player);
+    (this will make the camera follow the sprite)
+    
+    this.cameras.main.followOffset.set(-300, 0);
+    (this will make the camera follow but a little offset)
+    */
+
+   /*this.cameras.main.setBounds(0, 0, 720 * 2, 176);
+
+    for (x = 0; x < 2; x++)
+    {
+        this.add.image(720 * x, 0, 'bg').setOrigin(0);
+    }*/
+    
+    </script>
+</body>
+</html>
