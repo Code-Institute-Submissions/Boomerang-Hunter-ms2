@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sydney Platformer</title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
 </head>
 <body>
     <script>
-     var config = {
+    var config = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
     physics: {
         default: 'arcade',
+        arcade: {
+        gravity: {y: 400},
+        debug: false
+        }
     },
     scene: {
         preload: preload,
@@ -30,21 +34,58 @@ var cameraMove = false;
 
 var game = new Phaser.Game(config);
 
+    var score = 0;
+    var scoreText;
+
 function preload () {
-    this.load.image('bg', 'assets/uluru.jpg');
+    this.load.image('bg', 'assets/sky.png');
     this.load.image('ground', 'assets/platform.png');
     this.load.image('boomerang', 'assets/boomerang.png');
-
+    this.load.spritesheet('kangaroo', 'assets/kangaroo.png', {frameWidth: 50, frameHeight: 55}
+    );
 }
+
 function create () {
-    
+    /*this.cameras.main.setBounds(0, 0, 1920 * 2);
+    this.physics.world.setBounds(0, 0, 1920 * 2);*/
+
+    this.add.image(0, 0, 'bg').setOrigin(0);
+    this.add.image(1920, 0, 'bg').setOrigin(0).setFlipX(true);
+
 
     platforms = this.physics.add.staticGroup();
     
     platforms.create(400, 568, 'ground').setScale(2).refreshBody();
+
+    platforms.create(600, 400, 'ground');
+    platforms.create(50, 330, 'ground');
+    platforms.create(750, 220, 'ground');
+
+    player = this.physics.add.sprite(100, 450, 'kangaroo');
+
+    player.setBounce(0.1);
+    player.setCollideWorldBounds(true);
+
+    this.anims.crate({
+        key: 'right',
+        frames: this.anims.generateFrameNumbers('kangaroo', {start: 0, end: 4}),
+        frameRate: 10,
+        repeat: -1
+    });
+
+    this.anims.crate({
+        key: 'left',
+        frames: this.anims.generateFrameNumbers('kangaroo', {start: 5, end: 9}),
+        frameRate: 10,
+        repeat: -1
+    });
+
+    cursors = this.input.keyboard.createCursorKeys();
+
+   /* this.physics.add.collider(player, platforms);*/
+
 }
 function update () {
-
 }
     /*
     this.cameras.main.startFollow(player);
