@@ -26,13 +26,10 @@
 };
 
 
-
-
 var game = new Phaser.Game(config);
 
     var score = 0;
     var scoreText;
-    var text;
     var cameraMove = false;
     var cameraWidth;
     var cameraHeight;
@@ -50,8 +47,8 @@ var platforms;
 var cursors;
 
 function create () {
-    this.cameras.main.setBounds(0, 0, 1920 * 2);
-    this.physics.world.setBounds(0, 0, 1920 * 2);
+    this.cameras.main.setBounds(0, 0, 1200 * 2);
+    this.physics.world.setBounds(0, 0, 1200 * 2);
 
     cameraWidth = this.cameras.main.width;
     cameraHeight = this.cameras.main.height;
@@ -59,15 +56,23 @@ function create () {
 
     this.add.image(0, 0, 'bg').setOrigin(0);
     this.add.image(800, 0, 'bg').setOrigin(0).setFlipX(true);
+    this.add.image(1600, 0, 'bg').setOrigin(0).setFlipX(true);
 
 
     platforms = this.physics.add.staticGroup();
     
     platforms.create(400, 568, 'ground').setScale(2).refreshBody();
+    platforms.create(1200, 568, 'ground').setScale(2).refreshBody();
+    platforms.create(2000, 568, 'ground').setScale(2).refreshBody();
 
     platforms.create(600, 400, 'ground');
+    platforms.create(800, 400, 'ground');
     platforms.create(50, 330, 'ground');
-    platforms.create(750, 220, 'ground');
+    platforms.create(700, 220, 'ground');
+    platforms.create(1700, 120, 'ground');
+    platforms.create(2000, 450, 'ground');
+    platforms.create(2200, 250, 'ground');
+    platforms.create(1350, 300, 'ground');
 
     player = this.physics.add.sprite(100, 450, 'kangaroo');
 
@@ -103,12 +108,21 @@ function create () {
 
     boomerang = this.physics.add.group({
         key: 'boomerang',
-        repeat: 11,
-        setXY: { x:12, y:0, stepX: 70}
+        repeat: 19,
+        setXY: { x:12, y:0, stepX: 115}
     });
 
-
     this.physics.add.collider(boomerang, platforms);
+    this.physics.add.overlap(player, boomerang, collectBoomerang, null, this);
+
+    function collectBoomerang (player, boomerang){
+        boomerang.disableBody(true, true);
+
+        score += 100;
+        scoreText.setText('Points:' + score);
+    }
+
+    scoreText = this.add.text(16, 16, 'Points: 0', {fontSize: '32px', fill: '#000000'});
 
 }
 function update () 
