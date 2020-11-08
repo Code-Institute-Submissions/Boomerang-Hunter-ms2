@@ -52,11 +52,11 @@ function create () {
     movingPlatform1.body.allowGravity = false;
     movingPlatform1.setVelocityX(200);
 
-    movingPlatform2 = this.physics.add.image(300, 300, 'ground');
+    movingPlatform2 = this.physics.add.image(270, 270, 'ground');
 
     movingPlatform2.setImmovable(true);
     movingPlatform2.body.allowGravity = false;
-    movingPlatform2.setVelocityX(100);
+    movingPlatform2.setVelocityX(125);
 
     movingPlatform3 = this.physics.add.image(150, 150, 'ground');
 
@@ -99,8 +99,12 @@ function create () {
 
     boomerang = this.physics.add.group({
         key: 'boomerang',
-        repeat: 9,
-        setXY: { x:12, y:20, stepX: 260}
+        repeat: 11,
+        setXY: { x:12, y:0, stepX: 70}
+    });
+
+    boomerang.children.iterate(function(child) {
+        child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
     });
 
     this.physics.add.collider(boomerang, platforms);
@@ -109,15 +113,31 @@ function create () {
     this.physics.add.collider(boomerang, movingPlatform3);
     this.physics.add.overlap(player, boomerang, collectBoomerang, null, this);
 
-    function collectBoomerang (player, boomerang){
-        boomerang.disableBody(true, true);
-    }
 
-    dynamite = this.physics.add.group({
-        key: 'dynamite',
-        repeat: 4,
-        setXY: {x:50, y: 30, stepX: 450},
-    });
+    function collectBoomerang (player, boomerang)
+{
+    boomerang.disableBody(true, true);
+
+    score += 100;
+    scoreText.setText('Points: ' + score);
+    
+    if (boomerang.countActive(true) === 0){
+            boomerang.children.iterate(function (child){
+                child.enableBody(true, child.x, 0, true, true);
+            });
+
+        /*var x = (player.x < 400) ? Phaser.Math.Between(400, 800):
+            Phaser.Math.Between(0, 400);
+
+            var dynamite = dynamite.create(x, 16, 'dynamite');
+            dynamite.setBounce(1);
+            dynamite.setCollideWorldBounds(true);
+            dynamite.setVelocity(Phaser.Math.Between(-250, 250), 20);*/
+    }
+}
+    scoreText = this.add.text(16, 16, 'Points: 0', {fontSize: '32px', fill: '#000000'});
+
+    dynamite = this.physics.add.group();
     
     this.physics.add.collider(dynamite, platforms);
     this.physics.add.collider(dynamite, movingPlatform1);
@@ -132,8 +152,6 @@ function create () {
         dynamite.disableBody(true, true);
         gameOver = true;
     }
-
-    scoreText = this.add.text(16, 16, 'Points: 0', {fontSize: '32px', fill: '#000000'});
 
 }
 function update () 
@@ -158,7 +176,7 @@ function update ()
 
     if (cursors.up.isDown && player.body.touching.down)
     {
-        player.setVelocityY(-380);
+        player.setVelocityY(-450);
     }
 
     if (movingPlatform1.x >= 500)
@@ -172,11 +190,11 @@ function update ()
 
     if (movingPlatform2.x >= 400)
     {
-        movingPlatform2.setVelocityX(-100);
+        movingPlatform2.setVelocityX(-125);
     }
     else if (movingPlatform2.x <= 250)
     {
-        movingPlatform2.setVelocityX(100);
+        movingPlatform2.setVelocityX(125);
     }
 
     if (movingPlatform3.x >= 550)
