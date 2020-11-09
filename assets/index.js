@@ -99,12 +99,14 @@ function create () {
 
     boomerang = this.physics.add.group({
         key: 'boomerang',
-        repeat: 4,
-        setXY: { x:12, y:0, stepX: 140}
+        repeat: 6,
+        setXY: { x:12, y:0, stepX: 120},
+        setCollideWorldBounds: (true)
     });
+    
 
     boomerang.children.iterate(function(child) {
-        child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
+        child.setBounceY(0.1);
     });
 
     this.physics.add.collider(boomerang, platforms);
@@ -112,16 +114,17 @@ function create () {
     this.physics.add.collider(boomerang, movingPlatform2);
     this.physics.add.collider(boomerang, movingPlatform3);
     this.physics.add.overlap(player, boomerang, collectBoomerangs, null, this);
+    
 
 
-    function collectBoomerangs (player, boomerang)
+    function collectBoomerangs (player, boomerangs)
 {
-    boomerang.disableBody(true, true);
+    boomerangs.disableBody(true, true);
 
     score += 100;
     scoreText.setText('Points: ' + score);
     
-    /*if (boomerang.countActive(true) === 0){
+    if (boomerang.countActive(true) === 0){
             boomerang.children.iterate(function (child){
                 child.enableBody(true, child.x, 0, true, true);
             });
@@ -129,21 +132,21 @@ function create () {
             var x = (player.x < 400) ? Phaser.Math.Between(400, 800):
             Phaser.Math.Between(0, 400);
 
-            var dynamite = dynamite.create(x, 16, 'dynamite');
+            var dynamite = dynamites.create(x, 16, 'dynamite');
             dynamite.setBounce(1);
             dynamite.setCollideWorldBounds(true);
             dynamite.setVelocity(Phaser.Math.Between(-250, 250), 20);
-    }*/
+    }
 }
     scoreText = this.add.text(16, 16, 'Points: 0', {fontSize: '32px', fill: '#000000'});
 
-    dynamite = this.physics.add.group();
+    dynamites = this.physics.add.group();
     
-    this.physics.add.collider(dynamite, platforms);
-    this.physics.add.collider(dynamite, movingPlatform1);
-    this.physics.add.collider(dynamite, movingPlatform2);
-    this.physics.add.collider(dynamite, movingPlatform3);
-    this.physics.add.overlap(player, dynamite, hitDynamite, null, this);
+    this.physics.add.collider(dynamites, platforms);
+    this.physics.add.collider(dynamites, movingPlatform1);
+    this.physics.add.collider(dynamites, movingPlatform2);
+    this.physics.add.collider(dynamites, movingPlatform3);
+    this.physics.add.overlap(player, dynamites, hitDynamite, null, this);
 
 
     function hitDynamite (player, dynamite){
