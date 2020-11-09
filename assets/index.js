@@ -99,8 +99,8 @@ function create () {
 
     boomerang = this.physics.add.group({
         key: 'boomerang',
-        repeat: 11,
-        setXY: { x:12, y:0, stepX: 70}
+        repeat: 4,
+        setXY: { x:12, y:0, stepX: 140}
     });
 
     boomerang.children.iterate(function(child) {
@@ -111,29 +111,29 @@ function create () {
     this.physics.add.collider(boomerang, movingPlatform1);
     this.physics.add.collider(boomerang, movingPlatform2);
     this.physics.add.collider(boomerang, movingPlatform3);
-    this.physics.add.overlap(player, boomerang, collectBoomerang, null, this);
+    this.physics.add.overlap(player, boomerang, collectBoomerangs, null, this);
 
 
-    function collectBoomerang (player, boomerang)
+    function collectBoomerangs (player, boomerang)
 {
     boomerang.disableBody(true, true);
 
     score += 100;
     scoreText.setText('Points: ' + score);
     
-    if (boomerang.countActive(true) === 0){
+    /*if (boomerang.countActive(true) === 0){
             boomerang.children.iterate(function (child){
                 child.enableBody(true, child.x, 0, true, true);
             });
 
-        /*var x = (player.x < 400) ? Phaser.Math.Between(400, 800):
+            var x = (player.x < 400) ? Phaser.Math.Between(400, 800):
             Phaser.Math.Between(0, 400);
 
             var dynamite = dynamite.create(x, 16, 'dynamite');
             dynamite.setBounce(1);
             dynamite.setCollideWorldBounds(true);
-            dynamite.setVelocity(Phaser.Math.Between(-250, 250), 20);*/
-    }
+            dynamite.setVelocity(Phaser.Math.Between(-250, 250), 20);
+    }*/
 }
     scoreText = this.add.text(16, 16, 'Points: 0', {fontSize: '32px', fill: '#000000'});
 
