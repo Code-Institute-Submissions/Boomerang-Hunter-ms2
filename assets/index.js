@@ -24,6 +24,8 @@ var game = new Phaser.Game(config);
     var cameraMove = false;
     var cameraWidth;
     var cameraHeight;
+    var gameOverMessage;
+    var gameOverMessage2;
 
 function preload () {
     this.load.image('sky', 'assets/sky.png');
@@ -126,7 +128,6 @@ function create () {
     this.physics.add.overlap(player, boomerang, collectBoomerangs, null, this);
     
 
-
     function collectBoomerangs (player, boomerangs)
 {
     boomerangs.disableBody(true, true);
@@ -149,6 +150,8 @@ function create () {
     }
 }
     scoreText = this.add.text(16, 16, 'Points: 0', {fontSize: '32px', fill: '#000000'});
+    gameOverMessage = this.add.text(200, 200, '', { fontSize: 'bold 50px', fill: '#FF0000'});
+    gameOverMessage2 = this.add.text(240, 300, '', { fontSize: 'bold 50px', fill: '#FF0000'});
 
     dynamites = this.physics.add.group();
     
@@ -165,7 +168,8 @@ function create () {
         player.disableBody(true, true);
         dynamite.disableBody(true, true);
         gameOver = true;
-        alert("Game Over");
+        gameOverMessage.setText('YOU GOT HIT!');
+        gameOverMessage2.setText('GAME OVER');
     }
 
 }
