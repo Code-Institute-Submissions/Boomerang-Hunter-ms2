@@ -26,10 +26,12 @@ var game = new Phaser.Game(config);
     var cameraHeight;
 
 function preload () {
-    this.load.image('bg', 'assets/sky.png');
+    this.load.image('sky', 'assets/sky.png');
+    this.load.image('bg', 'assets/background.png');
     this.load.image('ground', 'assets/platform.png');
     this.load.image('boomerang', 'assets/boomerang.png');
     this.load.image('dynamite', 'assets/dynamite.png');
+    this.load.image('wall', 'assets/wall.png');
     this.load.spritesheet('kangaroo', 'assets/kangaroo.png', {frameWidth: 55, frameHeight: 55}
     );
 }
@@ -40,7 +42,13 @@ var cursors;
 
 function create () {
 
-    this.add.image(0, 0, 'bg').setOrigin(0);
+    this.add.image(0, 0, 'sky').setOrigin(0);
+    this.add.image(0, 370, 'bg').setOrigin(0);
+
+    walls = this.physics.add.staticGroup();
+
+    walls.create(-10, 250, 'wall');
+    walls.create(810, 250, 'wall');
 
     platforms = this.physics.add.staticGroup();
     
@@ -58,7 +66,7 @@ function create () {
     movingPlatform2.body.allowGravity = false;
     movingPlatform2.setVelocityX(125);
 
-    movingPlatform3 = this.physics.add.image(150, 150, 'ground');
+    movingPlatform3 = this.physics.add.image(220, 150, 'ground');
 
     movingPlatform3.setImmovable(true);
     movingPlatform3.body.allowGravity = false;
@@ -96,23 +104,25 @@ function create () {
     this.physics.add.collider(player, movingPlatform1);
     this.physics.add.collider(player, movingPlatform2);
     this.physics.add.collider(player, movingPlatform3);
+    this.physics.add.collider(player, walls);
 
     boomerang = this.physics.add.group({
         key: 'boomerang',
         repeat: 6,
-        setXY: { x:12, y:0, stepX: 120},
+        setXY: { x:25, y:0, stepX: 120},
         setCollideWorldBounds: (true)
     });
     
 
     boomerang.children.iterate(function(child) {
-        child.setBounceY(0.1);
+        child.setBounceY(0.3);
     });
 
     this.physics.add.collider(boomerang, platforms);
     this.physics.add.collider(boomerang, movingPlatform1);
     this.physics.add.collider(boomerang, movingPlatform2);
     this.physics.add.collider(boomerang, movingPlatform3);
+    this.physics.add.collider(boomerang, walls);
     this.physics.add.overlap(player, boomerang, collectBoomerangs, null, this);
     
 
@@ -146,6 +156,7 @@ function create () {
     this.physics.add.collider(dynamites, movingPlatform1);
     this.physics.add.collider(dynamites, movingPlatform2);
     this.physics.add.collider(dynamites, movingPlatform3);
+    this.physics.add.collider(dynamites, walls);
     this.physics.add.overlap(player, dynamites, hitDynamite, null, this);
 
 
@@ -154,6 +165,7 @@ function create () {
         player.disableBody(true, true);
         dynamite.disableBody(true, true);
         gameOver = true;
+        alert("Game Over");
     }
 
 }
@@ -182,16 +194,16 @@ function update ()
         player.setVelocityY(-450);
     }
 
-    if (movingPlatform1.x >= 500)
+    if (movingPlatform1.x >= 560)
     {
         movingPlatform1.setVelocityX(-200);
     }
-    else if (movingPlatform1.x <= 300)
+    else if (movingPlatform1.x <= 250)
     {
         movingPlatform1.setVelocityX(200);
     }
 
-    if (movingPlatform2.x >= 400)
+    if (movingPlatform2.x >= 500)
     {
         movingPlatform2.setVelocityX(-125);
     }
