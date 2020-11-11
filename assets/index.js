@@ -30,6 +30,7 @@ var game = new Phaser.Game(config);
 function preload () {
     this.load.image('sky', 'assets/sky.png');
     this.load.image('bg', 'assets/background.png');
+    this.load.image('cloud', 'assets/cloud.png');
     this.load.image('ground', 'assets/platform.png');
     this.load.image('boomerang', 'assets/boomerang.png');
     this.load.image('dynamite', 'assets/dynamite.png');
@@ -46,6 +47,9 @@ function create () {
 
     this.add.image(0, 0, 'sky').setOrigin(0);
     this.add.image(0, 370, 'bg').setOrigin(0);
+    this.add.image(550, 50, 'cloud').setScale(3).setOrigin(0);
+    this.add.image(0, 100, 'cloud').setScale(4).setOrigin(0);
+    this.add.image(430, 230, 'cloud').setScale(4).setOrigin(0);
 
     walls = this.physics.add.staticGroup();
 
