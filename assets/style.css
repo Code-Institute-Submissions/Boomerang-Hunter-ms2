@@ -1,21 +1,46 @@
-* {
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe:100,200,300,400,500,600,700|Underdog:100,200,300,400,500,600,700");
+
+*{
     font-size: 10px;
 }
 
 .container {
-    margin-left: 15em;
+    margin-left: 20vw;
+    background-color: #ff7f27;
 }
 
 .game-title{
-    font-weight: 600;
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 4em;
-    margin-right: 40px;
+    font-size: 3.5em;
+    margin-right: 1em;
+    color: #1b00b4;
 }
 
+
 .instructions-btn{
-    background-color: #000000;
-    color: #ff0000;
+    background-color: #1b00b4;
+    color: #ffffff;
     font-size: 2em;
     border-radius: 2.5em;
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    text-transform: uppercase;
+}
+
+#modalTitle{
+    font-family: "Underdog", sans-serif;
+    font-size: 3em;
+}
+
+.modal-body {
+    font-family: "Underdog", sans-serif;
+}
+
+.modal-body > h1 {
+    font-size: 3em;
+}
+
+.modal-body > p {
+    font-size: 2em;
 }

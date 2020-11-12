@@ -1,4 +1,4 @@
-var config = {
+let config = {
     type: Phaser.AUTO,
     width: 800,
     height: 580,
@@ -17,15 +17,15 @@ var config = {
 };
 
 
-var game = new Phaser.Game(config);
+let game = new Phaser.Game(config);
 
-    var score = 0;
-    var scoreText;
-    var cameraMove = false;
-    var cameraWidth;
-    var cameraHeight;
-    var gameOverMessage;
-    var gameOverMessage2;
+    let score = 0;
+    let scoreText;
+    let cameraMove = false;
+    let cameraWidth;
+    let cameraHeight;
+    let gameOverMessage;
+    let gameOverMessage2;
 
 function preload () {
     this.load.image('sky', 'assets/sky.png');
@@ -39,9 +39,9 @@ function preload () {
     );
 }
 
-var player;
-var platforms;
-var cursors;
+let player;
+let platforms;
+let cursors;
 
 function create () {
 
@@ -144,10 +144,10 @@ function create () {
                 child.enableBody(true, child.x, 0, true, true);
             });
 
-            var x = (player.x < 400) ? Phaser.Math.Between(400, 800):
+            let x = (player.x < 400) ? Phaser.Math.Between(400, 800):
             Phaser.Math.Between(0, 400);
 
-            var dynamite = dynamites.create(x, 16, 'dynamite');
+            let dynamite = dynamites.create(x, 16, 'dynamite');
             dynamite.setBounce(1);
             dynamite.setCollideWorldBounds(true);
             dynamite.setVelocity(Phaser.Math.Between(-250, 250), 20);
@@ -175,8 +175,10 @@ function create () {
         gameOverMessage.setText('YOU GOT HIT!');
         gameOverMessage2.setText('GAME OVER');
     }
-
+    
 }
+
+
 function update () 
 {
     if (cursors.left.isDown)
