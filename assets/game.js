@@ -1,7 +1,7 @@
 var config = {
     type: Phaser.AUTO,
     width: 800,
-    height: 600,
+    height: 580,
     physics: {
         default: 'arcade', 
         arcade: {
@@ -154,8 +154,8 @@ function create () {
     }
 }
     scoreText = this.add.text(16, 16, 'Points: 0', {fontSize: '32px', fill: '#000000'});
-    gameOverMessage = this.add.text(200, 200, '', { fontSize: 'bold 50px', fill: '#FF0000'});
-    gameOverMessage2 = this.add.text(240, 300, '', { fontSize: 'bold 50px', fill: '#FF0000'});
+    gameOverMessage = this.add.text(240, 200, '', { fontSize: 'bold 50px', fill: '#FF0000'});
+    gameOverMessage2 = this.add.text(270, 300, '', { fontSize: 'bold 50px', fill: '#FF0000'});
 
     dynamites = this.physics.add.group();
     
