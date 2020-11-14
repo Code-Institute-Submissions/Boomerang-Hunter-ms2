@@ -97,5 +97,6 @@
 ## Acknowledgements
   
  * Phaser Library was helpful in inspiring my project and had an abundance of physics simulators which were essential to the construction of this game.
+ * Piskel was used to create the kangaroo, boomerang and dynamite sprites as well as the background clouds, ground, walls and cacti.
  * I gained a lot of inspiration for this game from old-school platformers like Super Mario. 
  * And special thanks to my mentor Spencer Bariball who showed me the Phaser library and was incredibly helpful every step of the way.
