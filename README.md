@@ -2,6 +2,8 @@
 
 
 
+![Game Screenshot](assets/readme-assets/screenshot.png)
+
 [Live Website Link](https://rdgrover.github.io/Boomerang-Hunter-ms2/)
 
 ## UX
