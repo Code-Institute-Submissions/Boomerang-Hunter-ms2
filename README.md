@@ -73,9 +73,29 @@
 
 ### 2.5 Features To Be Implemented 
   
+  * With more time I would have liked to have added music to the game to help the immersive experience. 
+  
+## Technologies Utilised
+
+* HTML
+* CSS
+* JavaScript
+* Google Fonts
+* Bootstrap 
+* Phaser Library 
+* GitHub 
+* GitPod
+* Git
+* Balsamiq
   
   
+## Testing
+
+## Deployment
   
   
+## Acknowledgements
   
-  
+ * Phaser Library was helpful in inspiring my project and had an abundance of physics simulators which were essential to the construction of this game.
+ * I gained a lot of inspiration for this game from old-school platformers like Super Mario. 
+ * And special thanks to my mentor Spencer Bariball who showed me the Phaser library and was incredibly helpful every step of the way.
