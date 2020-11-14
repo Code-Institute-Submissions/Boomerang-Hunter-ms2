@@ -2,7 +2,7 @@
 
 
 
-Live Website Link: https://rdgrover.github.io/Boomerang-Hunter-ms2/.
+[Live Website Link](https://rdgrover.github.io/Boomerang-Hunter-ms2/)
 
 ## UX
 
