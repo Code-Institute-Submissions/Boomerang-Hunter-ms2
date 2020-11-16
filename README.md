@@ -75,28 +75,43 @@
   
   * With more time I would have liked to have added music to the game to help the immersive experience. 
   
+
+## Wireframes
+  
 ## Technologies Utilised
 
-* HTML
-* CSS
-* JavaScript
-* Google Fonts
-* Bootstrap 
-* Phaser Library 
-* GitHub 
-* GitPod
-* Git
-* Balsamiq
+* HTML5 - The project uses HTML to create the page for the game.
+* CSS3 - The project uses CSS to style the HTML elements involved with the game.
+* JavaScript - The project uses JavaScript for the game's logic and animations.
+* Google Fonts - The project uses Google Fonts to provide the title and instructions fonts.
+* Bootstrap - The project uses Bootstrap to center the game window and position the title and instructions at the top of the screen.
+* Phaser Library - The project uses the Phaser Library framework to help build the JavaScript.
+* GitHub - The project uses GitHub repository to store the game and for version control.
+* GitPod - The project uses GitPod as the terminal for building the game.
+* Git - The project uses Git to save the project and push the project into the GitHub repository.
+* Balsamiq - The project uses Balsamiq to create a wireframe for the game.
   
   
 ## Testing
 
 ## Deployment
-  
+ This project was deployed using GitHub pages. To do this the following steps were taken:
+ 1. Open the repository RDGrover/Boomerang-Hunter-ms2.
+ 1. From the menu at the top of the page click on the settings button.
+ 1. Scroll down to the GitHub pages section and select the source tab, changing it from **none** to **master branch**.
+ 1. After selecting **master branch** the page will be refreshed meaning the website is now deployed, scroll back down to GitHub pages and retrieve the link.
+ 
+ To deploy locally use the following steps:
+ 1. Go to GitHub repository https://github.com/RDGrover/Boomerang-Hunter-ms2
+ 1. Click the **Clone** or **Download** button and copy the URL into the address box https://github.com/RDGrover/Boomerang-Hunter-ms2.git
+ 1. Open your terminal and cd to the path where you want to run the clone of the repository.
+ 1. Type into the terminal git clone https://github.com/RDGrover/Boomerang-Hunter-ms2.git.
+ 1. Once the repository has been downloaded to the designated folder, you can run the files through the browser to check if it is working.
   
 ## Acknowledgements
   
- * Phaser Library was helpful in inspiring my project and had an abundance of physics simulators which were essential to the construction of this game.
- * Piskel was used to create the kangaroo, boomerang and dynamite sprites as well as the background clouds, ground, walls and cacti.
+ * [Phaser Library](https://phaser.io/) was helpful in inspiring my project and had an abundance of physics simulators which were essential to the construction of this game.
+ * One of [Phasers](https://phaser.io/tutorials/making-your-first-phaser-3-game) tutorials on building a platformer was incredibly helpful in creating base code for me to use.
+ * [Piskel](https://www.piskelapp.com/) was used to create the kangaroo, boomerang and dynamite sprites as well as the background clouds, ground, walls and cacti.
  * I gained a lot of inspiration for this game from old-school platformers like Super Mario. 
  * And special thanks to my mentor Spencer Bariball who showed me the Phaser library and was incredibly helpful every step of the way.
