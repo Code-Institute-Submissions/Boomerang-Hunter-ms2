@@ -44,3 +44,8 @@
 .modal-body > p {
     font-size: 2em;
 }
+
+.instructions-btn:hover {
+    background-color: #ff7f27;
+    color: #000000;
+}
