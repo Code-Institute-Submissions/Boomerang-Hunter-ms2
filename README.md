@@ -80,7 +80,7 @@
 
 Below is the wireframe for the game created using Balsamiq:
 
-![Game Wireframe](assets/readme-assets/boomerang-wire.pdf)
+[Boomerang Hunter Wireframe](assets/readme-assets/boomerang-wire.pdf)
   
 ## Technologies Utilised
 
