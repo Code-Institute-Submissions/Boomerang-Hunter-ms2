@@ -93,14 +93,37 @@ Steps taken:
  * Observe once the sprite makes contact with the boomerang the boomerang disappears.
  * Observe the points value in the corner increase by 100 for every boomerang collected.
 
-## As a new user I would like the consequence of the dynamite to be apparent.
+## As a new user I would like the consequence of the dynamite hitting the player to be apparent.
  
- 
- 
- 
- 
- 
- 
- 
+1. Once the first seven boomerangs are collected the first dynamite will appear and begin to bounce around.
+1. Every time all seven boomerangs are collected another dynamite will be created.
+1. If the dynamite collides with the player the game will end.
+
+Steps taken: 
+ * Use the arrow keys to navigate the level and collect the first seven boomerangs.
+ * Move the player into the path of the dynamite.
+ * When the dynamite hits the player observe the player sprite and dynamite disappear from the screen.
+ * Observe that after the player has been hit a message reading 'You got hit' and 'Game Over' will appear. 
+
+
+## Website Compatibility 
+
+The game is compatible with the following browsers - 
+* Google Chrome
+* Microsoft Edge
+* Internet Explorer
+* Firefox
+* Safari
+
+## Device Compatibility
+
+The game is designed for a desktop/laptop and requires a keyboard to play. However, the game does work on a tablet or a smart phone with a bluetooth keyboard enabled.
+Although it does work on a phone game screen is not centered as it is not designed for a screen that small.
+
+Insert screenshots
+
+
+
+## Automated Tests
  
  
