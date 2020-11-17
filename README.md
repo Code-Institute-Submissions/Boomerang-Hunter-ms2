@@ -98,6 +98,8 @@ Below is the wireframe for the game created using Balsamiq:
   
 ## Testing
 
+Testing is documented in seperate file - [testing.md](/testing.md)
+
 ## Deployment
  This project was deployed using GitHub pages. To do this the following steps were taken:
  1. Open the repository RDGrover/Boomerang-Hunter-ms2.
