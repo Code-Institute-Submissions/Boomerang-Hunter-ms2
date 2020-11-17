@@ -10,7 +10,7 @@
 
 ### 1.1 Overview 
 
-* When beginning the project I knew I wanted to create a game and was told about the Phaser library by my mentor. Using certain aspects of the library, particularly the physics simulations it was easier to create my own code to create the game. I wanted to design an homage to old-school platformer games, designed to be played on a desktop. There are simple controls and colourful design with the goal of creating a game that anyone could play but predominantely appeals to children.
+* When beginning the project I knew I wanted to create a game and was told about the Phaser library by my mentor. Using certain aspects of the library, particularly the physics simulations it was easier to create my own code to create the game. I wanted to design an homage to old-school platformer games, designed to be played on a desktop. There are simple controls and colourful design with the goal of creating a game that anyone could play but predominantely appeals to children. I wanted to create something specifically for desktops because the 8-bit platformers that I drew inspiration from are either console or desktop.
 
 ### 1.2 Project Goals 
 
