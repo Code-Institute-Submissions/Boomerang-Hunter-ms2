@@ -73,7 +73,12 @@
 
 ### 2.5 Features To Be Implemented 
   
-  * With more time I would have liked to have added music to the game to help the immersive experience. 
+* With more time I would have liked to have added music to the game to help the immersive experience. 
+  
+### 2.6 Known Bugs
+
+* Because the dynamite's speed is variable if it hits one of the walls at a very high speed it will stop moving in that direction on the x-axis and will just bounce up against 
+the wall. Although it does stop moving along the x-axis the dynamite still functions and can cause a game over if hit.
   
 
 ## Wireframes
@@ -118,6 +123,5 @@ Testing is documented in seperate file - [testing.md](/testing.md)
   
  * [Phaser Library](https://phaser.io/) was helpful in inspiring my project and had an abundance of physics simulators which were essential to the construction of this game.
  * One of [Phasers](https://phaser.io/tutorials/making-your-first-phaser-3-game) tutorials on building a platformer was incredibly helpful in creating base code for me to use.
- * [Piskel](https://www.piskelapp.com/) was used to create the kangaroo, boomerang and dynamite sprites as well as the background clouds, ground, walls and cacti.
- * I gained a lot of inspiration for this game from old-school platformers like Super Mario. 
+ * [Piskel](https://www.piskelapp.com/) was used to create the kangaroo, boomerang and dynamite sprites as well as the background clouds, ground, walls and cacti. 
  * And special thanks to my mentor Spencer Bariball who showed me the Phaser library and was incredibly helpful every step of the way.
