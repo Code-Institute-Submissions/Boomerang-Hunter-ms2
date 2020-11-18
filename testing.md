@@ -76,6 +76,9 @@ Steps taken:
  * Using the right arrow key the sprite will make the sprite move until it hits the wall and can no longer move.
  * Using the up arrow key to make the sprite jump observe it not jump through the moving platform if the platform is above.
  * Using the up arrow key to make the sprite jump observe the sprite land on the moving platform provided there is no platform above when jumping.
+ 
+![Sprite hits wall and can't go further left](assets/readme-assets/screenshot-wall-left.png)
+![Sprite hits wall and can't go further right](assets/readme-assets/screenshot-wall-right.png)
 
 1. Once boomerangs appear at the top of the screen they should land on the moving platforms or the ground.
 1. The boomerangs will not be able to go through the walls at the end of the screen.
@@ -86,6 +89,10 @@ Steps taken:
  * Collect the first seven boomerangs to make others appear.
  * Observe the random spawning of the boomerangs. 
  * Since they appear randomly and the platforms are constantly in motion there is a possibility they will bounce towards the wall, if this happens observe they bounce off the wall.
+ 
+![Boomerangs being initially created](assets/readme-assets/opening-screenshot.png)
+![Boomerangs bouncing on platforms](assets/readme-assets/bounce-screenshot.png)
+![Boomerangs being created after the first seven have been collected](assets/readme-assets/screenshot-dynamite-creation.png)
 
 1. When the dynamite is created it will bounce around the screen.
 1. It will bounce off of the walls, ground and moving platforms.
@@ -95,6 +102,8 @@ Steps taken:
  * Observe the first dynamite being created at the top of the screen.
  * Observe the dynamite bounce off of the moving platforms, walls and ground. 
  * If it is underneath a platform observe it not pass through the platform but rather will bounce of the underside of the platform. 
+ 
+![Dynamite being created](assets/readme-assets/screenshot-dynamite-creation.png)
 
 ## As a new user I would like it to be clear when interacting with the boomerangs they are being collected.
 
@@ -105,6 +114,9 @@ Steps taken:
  * Use the arrow keys to move the player sprite towards the nearest boomerang.
  * Observe once the sprite makes contact with the boomerang the boomerang disappears.
  * Observe the points value in the corner increase by 100 for every boomerang collected.
+ 
+![Points total = 0](assets/readme-assets/points-0.png)
+![Points total = 100](assets/readme-assets/points-100.png)
 
 ## As a new user I would like the consequence of the dynamite hitting the player to be apparent.
  
@@ -118,6 +130,8 @@ Steps taken:
  * When the dynamite hits the player observe the player sprite and dynamite disappear from the screen.
  * Observe that after the player has been hit a message reading 'You got hit' and 'Game Over' will appear. 
 
+![Dynamite about to hit sprite](assets/readme-assets/screenshot-dynamite-hit.png)
+![Game Over screen](assets/readme-assets/screenshot-game-over.png)
 
 ## Website Compatibility 
 
