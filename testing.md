@@ -125,5 +125,31 @@ Insert screenshots
 
 
 ## Automated Tests
+
+I used W3 to check my HTML and CSS code to ensure there were no issues. These are the steps I took:
+
+#### For HTML code
+1. Go to https://validator.w3.org.
+1. Enter the following url https://rdgrover.github.io/Boomerang-Hunter-ms2/index.html into the check by address bar and click **Check**.
+1. Confirm there are no errors or warnings.
+
+Insert W3 screenshot
+
+#### For CSS code
+1. Go to https://jigsaw.w3.org/css-validator/.
+1. Enter the following url https://rdgrover.github.io/Boomerang-Hunter-ms2/assets/style.css into address bar and click **Check**.
+1. Confirm there are no errors or warnings.
+
+Insert W3 screenshot.
+
+#### For JavaScript code
+
+
+
+
+
+
+
+
  
  
