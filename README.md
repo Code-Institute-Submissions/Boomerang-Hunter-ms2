@@ -51,6 +51,15 @@
   * 000000 – Fuse 
   * fffca4 – Spark 
 
+## User Stories
+
+* As a new user I would want information on how to play the game to be visible as soon as the game is loaded.
+* As a new user I would like to be able to close the modal so that I can play the game once I understand the rules.
+* As a new user I would like all collectible items to spawn as soon as the game is loaded so it can be played immediately.
+* As a new user I would like the controls to be responsive and for it be clear which direction I am going in.
+* As a new user I would like it to be apparent how objects interact with the level.
+* As a new user I would like it to be clear when interacting with the boomerangs they are being collected.
+* As a new user I would like the consequence of the dynamite hitting the player to be apparent.
 
 ## Features
 
