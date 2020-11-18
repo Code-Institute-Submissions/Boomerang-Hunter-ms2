@@ -15,6 +15,8 @@ Steps taken:
   * Click on button to open the 'Instructions' modal.
   * Observe a modal with a brief backstory followed by the controls for the game. 
   
+![Game opening screenshot](assets/readme-assets/screenshot.png)
+![Screenshot of modal](assets/readme-assets/instructions-modal.png)
 ## As a new user I would like to be able to close the modal so that I can play the game once I understand the rules.
 
 1. When the modal is open there is a button present labelled 'Let's Play'.
