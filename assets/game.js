@@ -37,12 +37,14 @@ function preload () {
 }
 
 let player;
+let ground;
 let movingPlatform1;
 let movingPlatform2;
 let movingPlatform3;
 let walls;
 let cursors;
 let boomerang;
+
 
 function create () {
 
@@ -57,9 +59,9 @@ function create () {
     walls.create(-10, 250, 'wall');
     walls.create(810, 250, 'wall');
 
-    platforms = this.physics.add.staticGroup();
+    ground = this.physics.add.staticGroup();
     
-    platforms.create(400, 568, 'ground').setScale(2).refreshBody();
+    ground.create(400, 568, 'ground').setScale(2).refreshBody();
 
     movingPlatform1 = this.physics.add.image(400, 400, 'ground');
 
@@ -107,7 +109,7 @@ function create () {
 
     cursors = this.input.keyboard.createCursorKeys();
 
-    this.physics.add.collider(player, platforms);
+    this.physics.add.collider(player, ground);
     this.physics.add.collider(player, movingPlatform1);
     this.physics.add.collider(player, movingPlatform2);
     this.physics.add.collider(player, movingPlatform3);
@@ -125,7 +127,7 @@ function create () {
         child.setBounceY(0.3);
     });
 
-    this.physics.add.collider(boomerang, platforms);
+    this.physics.add.collider(boomerang, ground);
     this.physics.add.collider(boomerang, movingPlatform1);
     this.physics.add.collider(boomerang, movingPlatform2);
     this.physics.add.collider(boomerang, movingPlatform3);
@@ -161,7 +163,7 @@ function create () {
 
     dynamites = this.physics.add.group();
     
-    this.physics.add.collider(dynamites, platforms);
+    this.physics.add.collider(dynamites, ground);
     this.physics.add.collider(dynamites, movingPlatform1);
     this.physics.add.collider(dynamites, movingPlatform2);
     this.physics.add.collider(dynamites, movingPlatform3);
