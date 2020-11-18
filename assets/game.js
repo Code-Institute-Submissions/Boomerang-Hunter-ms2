@@ -21,9 +21,6 @@ let game = new Phaser.Game(config);
 
     let score = 0;
     let scoreText;
-    let cameraMove = false;
-    let cameraWidth;
-    let cameraHeight;
     let gameOverMessage;
     let gameOverMessage2;
 
