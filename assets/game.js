@@ -105,7 +105,7 @@ function create () {
         key: 'turn',
         frames: [{ key: 'kangaroo', frame: 10}],
         frameRate: 10
-    })
+    });
 
     cursors = this.input.keyboard.createCursorKeys();
 
