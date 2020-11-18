@@ -27,6 +27,8 @@ Steps taken:
   * When hovering over the button will change the button's background colour.
   * Clicking the button will close the modal.
   * Observe the modal closing. 
+  
+![Screenshot of closing modal](assets/readme-assets/instructions-modal-close.png)
 
 ## As a new user I would like all collectible items to spawn as soon as the game is loaded so it can be played immediately. 
 
@@ -36,6 +38,8 @@ Steps taken:
  * Go to Boomerang Hunter website - https://rdgrover.github.io/Boomerang-Hunter-ms2/.
  * Wait for page to load.
  * Observe boomerangs being created at the top of the screen and falling to interact with platforms below.
+ 
+![Boomerangs at the top of the screen](assets/readme-assets/opening-screenshot.png)
 
 ## As a new user I would like the controls to be responsive and for it be clear which direction I am going in.
 
@@ -52,6 +56,13 @@ Steps taken:
  * Press the up arrow key when not touching the ground or platform and observe that the sprite will not jump.
  * Press the right arrow key after pressing the up arrow key and observe the sprite animated running right and moving to the right of the screen.
  * Press the left arrow key after pressing the up arrow key and observe the sprite animated running left and moving to the left of the screen.
+ 
+![Sprite moving right](assets/readme-assets/screenshot-move-right.png)
+![Sprite moving left](assets/readme-assets/screenshot-move-left.png)
+![Sprite jumping](assets/readme-assets/screenshot-jump.png)
+![Sprite jump interupted by platform](assets/readme-assets/screenshot-jump-interupted.png)
+![Sprite jump right](assets/readme-assets/screenshot-jump-right.png)
+![Sprite jump left](assets/readme-assets/screenshot-jump-left.png)
 
 ## As a new user I would like it to be apparent how objects interact with the level.
 
