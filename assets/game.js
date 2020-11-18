@@ -37,7 +37,9 @@ function preload () {
 }
 
 let player;
-let platforms;
+let movingPlatform1;
+let movingPlatform2;
+let movingPlatform3;
 let cursors;
 
 function create () {
