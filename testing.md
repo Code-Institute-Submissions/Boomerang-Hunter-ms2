@@ -147,9 +147,11 @@ The game is compatible with the following browsers -
 The game is designed for a desktop/laptop and requires a keyboard to play. However, the game does work on a tablet or a smart phone with a bluetooth keyboard enabled.
 Although it does work on a phone game screen is not centered as it is not designed for a screen that small.
 
-Insert screenshots
+#### iPad Pro view
+![Screenshot from an iPad pro](assets/readme-assets/ipad-screenshot.jpeg)
 
-
+#### iPhone 7 view
+![Screenshot from an iPhone 7](assets/readme-assets/iphone-screenshot.png)
 
 ## Automated Tests
 
