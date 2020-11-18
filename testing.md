@@ -144,7 +144,15 @@ Insert W3 screenshot.
 
 #### For JavaScript code
 
+1. Go to repository https://github.com/RDGrover/Boomerang-Hunter-ms2.
+1. Open **assets** folder.
+1. Click on the **game.js** file and you should see the Javascript code.
+1. Highlight and copy all the code.
+1. Open url https://jshint.com/.
+1. Paste the copied code into the window where instructed.
+1. Confirm that there are no errors.
 
+Insert JShint screenshot.
 
 
 
