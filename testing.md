@@ -133,14 +133,14 @@ I used W3 to check my HTML and CSS code to ensure there were no issues. These ar
 1. Enter the following url https://rdgrover.github.io/Boomerang-Hunter-ms2/index.html into the check by address bar and click **Check**.
 1. Confirm there are no errors or warnings.
 
-Insert W3 screenshot
+![HTML validator screenshot](assets/readme-assets/html-validator.png)
 
 #### For CSS code
 1. Go to https://jigsaw.w3.org/css-validator/.
 1. Enter the following url https://rdgrover.github.io/Boomerang-Hunter-ms2/assets/style.css into address bar and click **Check**.
 1. Confirm there are no errors or warnings.
 
-Insert W3 screenshot.
+![CSS validator screenshot](assets/readme-assets/css-validator.png)
 
 #### For JavaScript code
 
@@ -152,7 +152,7 @@ Insert W3 screenshot.
 1. Paste the copied code into the window where instructed.
 1. Confirm that there are no errors.
 
-Insert JShint screenshot.
+![JavaScript validator screenshot](assets/readme-assets/js-validator.png)
 
 
 
