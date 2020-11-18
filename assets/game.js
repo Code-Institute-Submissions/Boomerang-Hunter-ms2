@@ -173,7 +173,6 @@ function create () {
         this.physics.pause();
         player.disableBody(true, true);
         dynamite.disableBody(true, true);
-        gameOver = true;
         gameOverMessage.setText('YOU GOT HIT!');
         gameOverMessage2.setText('GAME OVER');
     }
