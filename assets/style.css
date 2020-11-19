@@ -28,6 +28,15 @@
     text-transform: uppercase;
 }
 
+.reload-btn{
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 2em;
+    border-radius: 2.5em;
+    font-family: "ZCOOL KuaiLe", sans-serif;
+    text-transform: uppercase;
+}
+
 #modalTitle{
     font-family: "Underdog", sans-serif;
     font-size: 3em;
@@ -48,4 +57,9 @@
 .instructions-btn:hover {
     background-color: #ffffff;
     color: #1b00b4;
+}
+
+.reload-btn:hover{
+    background-color: #ffffff;
+    color: #ff0000;
 }
