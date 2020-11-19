@@ -60,6 +60,7 @@
 * As a new user I would like it to be apparent how objects interact with the level.
 * As a new user I would like it to be clear when interacting with the boomerangs they are being collected.
 * As a new user I would like the consequence of the dynamite hitting the player to be apparent.
+* As a new user I would like to be able to restart once I recieve a game over.
 
 ## Features
 
