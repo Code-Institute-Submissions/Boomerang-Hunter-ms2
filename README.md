@@ -10,11 +10,11 @@
 
 ### 1.1 Overview 
 
-* When beginning the project I knew I wanted to create a game and was told about the Phaser library by my mentor. Using certain aspects of the library, particularly the physics simulations it was easier to create my own code to create the game. I wanted to design an homage to old-school platformer games, designed to be played on a desktop. There are simple controls and colourful design with the goal of creating a game that anyone could play but predominantely appeals to children. I wanted to create something specifically for desktops because the 8-bit platformers that I drew inspiration from are either console or desktop.
+* When beginning the project I knew I wanted to create a game and was told about the Phaser library by my mentor. Using certain aspects of the library, particularly the physics simulations it was easier to create my own code to create the game. I wanted to design an homage to old-school platformer games, designed to be played on a desktop. There are simple controls and colourful design with the goal of creating a game that anyone could play but predominantly appeals to children. I wanted to create something specifically for desktops because the 8-bit platformers that I drew inspiration from are either console or desktop.
 
 ### 1.2 Project Goals 
 
-* I liked the idea of creating something that seemed simple but you can spend hours replaying it to try and beat your best score. The aesthetic of the game is also my way of harkening back to arcade era game, with pixelated backgrounds and a sprite designed with pixel art. I chose to do this because I wanted to create something that seemed familiar and had a nostaligic feel to it whilst still creating something brand new and adding my own design to the 8-bit game style. I also wanted to create a game that didn't have a way to end the game by reaching a certain score, so that means the user is only trying to beat their own previous scores. 
+* I liked the idea of creating something that seemed simple but you can spend hours replaying it to try and beat your best score. The aesthetic of the game is also my way of harkening back to arcade era game, with pixelated backgrounds and a sprite designed with pixel art. I chose to do this because I wanted to create something that seemed familiar and had a nostalgic feel to it whilst still creating something brand new and adding my own design to the 8-bit game style. I also wanted to create a game that didn't have a way to end the game by reaching a certain score, so that means the user is only trying to beat their own previous scores. 
 
 ### 1.3 User Goals
 
@@ -41,7 +41,7 @@
   * 030b51 – Eyes 
   
 * Boomerang Colours: 
-  * d33619 – Red stripe in center
+  * d33619 – Red stripe in centre
   * 472c01 – Outer brown
   * 8b8545 – Inner brown 
   
@@ -60,13 +60,13 @@
 * As a new user I would like it to be apparent how objects interact with the level.
 * As a new user I would like it to be clear when interacting with the boomerangs they are being collected.
 * As a new user I would like the consequence of the dynamite hitting the player to be apparent.
-* As a new user I would like to be able to restart once I recieve a game over.
+* As a new user I would like to be able to restart once I receive a game over.
 
 ## Features
 
 ### 2.1 Game Board
 
-* The level has a fixed background of desert, sky and cacti which helps to immerse you in the game and give it depth. There are three seperate platforms each moving between their own parameters at their own set speeds. The lowest platform moving the fastest, the middle platform moving at a medium speed and the highest platform moving the slowest.
+* The level has a fixed background of desert, sky and cacti which helps to immerse you in the game and give it depth. There are three separate platforms each moving between their own parameters at their own set speeds. The lowest platform moving the fastest, the middle platform moving at a medium speed and the highest platform moving the slowest.
 
 ### 2.2 Sprite 
 
@@ -105,7 +105,7 @@ Below is the wireframe for the game created using Balsamiq:
 * CSS3 - The project uses CSS to style the HTML elements involved with the game.
 * JavaScript - The project uses JavaScript for the game's logic and animations.
 * Google Fonts - The project uses Google Fonts to provide the title and instructions fonts.
-* Bootstrap - The project uses Bootstrap to center the game window and position the title and instructions at the top of the screen.
+* Bootstrap - The project uses Bootstrap to centre the game window and position the title and instructions at the top of the screen.
 * Phaser Library - The project uses the Phaser Library framework to help build the JavaScript.
 * GitHub - The project uses GitHub repository to store the game and for version control.
 * GitPod - The project uses GitPod as the terminal for building the game.
@@ -115,14 +115,14 @@ Below is the wireframe for the game created using Balsamiq:
   
 ## Testing
 
-Testing is documented in seperate file - [testing.md](/testing.md)
+Testing is documented in separate file - [testing.md](/testing.md)
 
 ## Deployment
 
  This project was coded using Git and GitPod, the following steps were made to save code and add it to GitHub repository:
  1. Use git add to move code from the workspace to staging area.
  1. Use git commit to save files to a local repository with a message to say what has been changed since previous commit.
- 1. Use git push to move the files from a local repsoitory to a remote repository like GitHub.
+ 1. Use git push to move the files from a local repository to a remote repository like GitHub.
  
  This project was deployed using GitHub pages. To do this the following steps were taken:
  1. Open the repository RDGrover/Boomerang-Hunter-ms2.
