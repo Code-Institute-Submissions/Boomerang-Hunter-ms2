@@ -134,6 +134,20 @@ Steps taken:
 ![Dynamite about to hit sprite](assets/readme-assets/screenshot-dynamite-hit.png)
 ![Game Over screen](assets/readme-assets/screenshot-game-over.png)
 
+## As a new user I would like to be able to restart once I recieve a game over.
+
+1. Once the game is loaded the restart button will be visible and active.
+1. It can be pressed at any time.
+1. It can be pressed if you get a game over to start the game again.
+
+Steps taken:
+ * Observe the red restart button at the top of the screen.
+ * When it is hovered over observe it change colour to illustrate the mouse is over the button.
+ * Click the restart button and observe the screen refresh
+ 
+![Hover over restart button on game over screen](assets/readme-assets/screenshot-restart-hover.png)
+![Restarted game](assets/readme-assets/opening-screenshot.png)
+
 ## Website Compatibility 
 
 The game is compatible with the following browsers - 
