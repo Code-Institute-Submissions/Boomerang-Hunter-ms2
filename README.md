@@ -116,6 +116,12 @@ Below is the wireframe for the game created using Balsamiq:
 Testing is documented in seperate file - [testing.md](/testing.md)
 
 ## Deployment
+
+ This project was coded using Git and GitPod, the following steps were made to save code and add it to GitHub repository:
+ 1. Use git add to move code from the workspace to staging area.
+ 1. Use git commit to save files to a local repository with a message to say what has been changed since previous commit.
+ 1. Use git push to move the files from a local repsoitory to a remote repository like GitHub.
+ 
  This project was deployed using GitHub pages. To do this the following steps were taken:
  1. Open the repository RDGrover/Boomerang-Hunter-ms2.
  1. From the menu at the top of the page click on the settings button.
