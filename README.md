@@ -27,7 +27,7 @@
 
 * World Colours:
   * 1b00b4 - Game Title / Instructions button
-  * ff0000 – Game over
+  * ff0000 – Game over / Restart button
   * ff7f27 – Platforms / ground / walls
   * 00dd10 – Front Cactus
   * 006707 – Back Cactus 
@@ -80,12 +80,14 @@
 
 * A modal was placed next to the title above the game window which shows you the instructions of how to play the game. As the game has quite simplistic controls and it is designed to be visually understood without context you can play the game without reading through the instructions. However, because the modal is always present you can look at the instructions at any time. 
 
+### 2.5 Restart Button
+* A button has been added beneath the title and How To Play button labelled 'Restart'. Clicking on this button will reload the page back to it's original state, resetting the points total to 0 and creating the original seven boomerangs. Because the restart button is always present you do not have to get a 'Game Over' to press the button, so should there be an unexpected glitch you can restart the game without having to exit the webpage.  
 
-### 2.5 Features To Be Implemented 
+### 2.6 Features To Be Implemented 
   
 * With more time I would have liked to have added music to the game to help the immersive experience. 
   
-### 2.6 Known Bugs
+### 2.7 Known Bugs
 
 * Because the dynamite's speed is variable if it hits one of the walls at a very high speed it will stop moving in that direction on the x-axis and will just bounce up against 
 the wall. Although it does stop moving along the x-axis the dynamite still functions and can cause a game over if hit.
