@@ -69,7 +69,7 @@ Steps taken:
 
 1. Once the player sprite appears it should land on the ground.
 1. The player should be unable to move beyond the game screen because of the walls at either side of the screen.
-1. The player should be able to land on the moving platfroms and not jump through them. 
+1. The player should be able to land on the moving platforms and not jump through them. 
 
 Steps taken:
  * Once the page has loaded observe the sprite drop down on to the ground.
@@ -134,7 +134,7 @@ Steps taken:
 ![Dynamite about to hit sprite](assets/readme-assets/screenshot-dynamite-hit.png)
 ![Game Over screen](assets/readme-assets/screenshot-game-over.png)
 
-## As a new user I would like to be able to restart once I recieve a game over.
+## As a new user I would like to be able to restart once I receive a game over.
 
 1. Once the game is loaded the restart button will be visible and active.
 1. It can be pressed at any time.
@@ -159,8 +159,8 @@ The game is compatible with the following browsers -
 
 ## Device Compatibility
 
-The game is designed for a desktop/laptop and requires a keyboard to play. However, the game does work on a tablet or a smart phone with a bluetooth keyboard enabled.
-Although it does work on a phone game screen is not centered as it is not designed for a screen that small.
+The game is designed for a desktop/laptop and requires a keyboard to play. However, the game does work on a tablet or a smart phone with a Bluetooth keyboard enabled.
+Although it does work on a phone game screen is not centred as it is not designed for a screen that small.
 
 #### iPad Pro view
 ![Screenshot from an iPad pro](assets/readme-assets/ipad-screenshot.jpeg)
@@ -192,7 +192,7 @@ I used W3 to check my HTML and CSS code to ensure there were no issues. These ar
 1. Open **assets** folder.
 1. Click on the **game.js** file and you should see the Javascript code.
 1. Highlight and copy all the code.
-1. Open url https://jshint.com/.
+1. Open URL https://jshint.com/.
 1. Paste the copied code into the window where instructed.
 1. Confirm that there are no errors.
 
